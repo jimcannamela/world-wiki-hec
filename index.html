@@ -11,7 +11,7 @@
     integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ" crossorigin="anonymous">
 </head>
 
-<body>
+<body class="container-fluid">
   <header>
     <!-- 
       1. Start with a generic concept for your world. Is it a wasteland? A paradise? A giant ball of cheese?
@@ -29,18 +29,13 @@
     <h1>The World of Zerthec YEO3</h1>
 
     <p id="description">
-      <!-- 3. Write up a short, single paragraph description for your world. -->
       One thousand years have passed since the Seven Days of Fire, an apocalyptic war that destroyed civilization and
       created the vast Toxic Jungle,[a] a poisonous forest swarming with giant mutant insects.
     </p>
   </header>
 
-  <section id="locations">
+  <section class="container-sm location">
     <h2>Locations</h2>
-
-    <!-- 
-      4. Create a table with 4 columns: name, size, climate, and population.
-    -->
     <table>
       <thead>
         <th>
@@ -50,58 +45,56 @@
           <tr>population</tr>
         </th>
       </thead>
-      <!--
-        5. Fill in data for at least 3 (more is fine) notable locations in your world.
-          This could be a city, a geographical area, or a whole continent.
-      -->
+
       <tbody>
         <tr>
-          <td>Ebonwick </td>
+          <td><a href="location-Ebonwick.html">Ebonwick</a></td>
           <td>city</td>
           <td>active volcano</td>
           <td>3 million</td>
         </tr>
         <tr>
-          <td>Fungal Grove </td>
+          <td><a href="location-Fungal-Grove.html">Fungal Grove</a></td>
           <td>forest </td>
           <td>mutaed fungi </td>
           <td>none</td>
         </tr>
         <tr>
-          <td>Zephyria </td>
+          <td><a href="location-Zephyria.html">Zephyria</a></td>
           <td>100miles of plains </td>
           <td>underground caves, full of minerals </td>
           <td>50</td>
         </tr>
       </tbody>
     </table>
-    <!--
-      6. Make a copy of `location.html` for each entry. 
-        Rename these files based on the name of the location they correspond to.
-        -->
-    <!--
-      7. Follow the instructions in those files to create the location pages.
-      -->
-    <!--
-      8. Hyperlink each name in this table to link to the corresponding page.
-    -->
   </section>
 
   <section id="contact">
-    <h2>Contact ________</h2>
-
-    <!-- 
-      9. Create a contact form, with at least 4 fields, for others to contact some entity in your world.
-        This could be a government travel bureau, a corporation of some sort, or even an individual in your world.
-        The important part is this has to be a form used to contact this entity.
-
-      10. Fill in the heading of this section with something appropriate.
-    -->
+    <h2>Contact E.R.B(Environmental Rehabilitation Bureau)</h2>
+    <form>
+      <label>
+        Name:
+        <input type="text" name="Name"/>
+      </label>
+      <label>
+        Email:
+        <input type="text" name="email"/>
+      </label>
+      <label>
+        Phone:
+        <input type="tel" id="phone" name="phone" placeholder="(123)456-7890" pattern="[0-9]{3}-[0-9]{2}-[0-9]{3}">
+      </label>
+      <label>
+        Suggestion Box
+        <textarea placeholder="Comments/Concerns" rows="4" cols="50" name="suggestionbox"></textarea> 
+      </label>
+      <input type="submit" name="submit-btn">
+    </form>
   </section>
 
   <footer>
-    <!-- 11. Finally, make up a company that owns the copyright for this world.  -->
-    &copy; 2022 ___________
+    
+    &copy; 2022 Studio Pollen
   </footer>
 </body>
 
