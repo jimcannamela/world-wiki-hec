@@ -1,0 +1,36 @@
+html, body {
+    background-color: rgb(252, 252, 252);
+    color: white;
+}
+
+h1{
+    margin: 30px;
+    font-family: fantasy;
+    color: rgb(4, 87, 55);
+    align-self: center;
+    justify-content: center;
+    align-content: center;
+}
+
+h2  {
+    color: gold;
+    font-family: fantasy;
+    justify-content: center;
+    align-content: center;
+}
+
+.location-wildlife, .location-trivia, .location-details {
+    background-color: green;
+    border: 6px solid darkgreen;
+    margin-top: 20px;
+}
+
+ul {
+    justify-content: center;
+    align-content: center;
+    font-size: larger;
+}
+
+header img{
+    margin: 20px;
+}
